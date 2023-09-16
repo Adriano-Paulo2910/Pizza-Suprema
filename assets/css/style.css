@@ -170,6 +170,8 @@ header{
 .sobre-conteudo p{
     margin-top: 2rem;
     color: var(--secundary-color);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
 
 .sobre-conteudo h2{
