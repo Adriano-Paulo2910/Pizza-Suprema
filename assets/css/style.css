@@ -153,7 +153,7 @@ header{
 }
 
 .sobre-conteudo{
-    max-width: 80rem;
+    max-width: 70rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -161,6 +161,10 @@ header{
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.sobre-conteudo img{
+    margin-bottom: 1rem;
 }
 
 .sobre-conteudo p{
@@ -171,5 +175,7 @@ header{
 .sobre-conteudo h2{
     color: var(--primary-color);
     font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    
 }
 
