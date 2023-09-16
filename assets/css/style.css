@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root{
     --primary-color: #ff6347;
     --white-color: #fff;
@@ -12,7 +14,7 @@
 }
 
 html{
-    font-family: sans-serif;
+    font-family: 'Josefin Sans';
     line-height: 1.5rem;
     scroll-behavior: smooth;
 }
@@ -144,7 +146,6 @@ header{
     transform: scale(1.05);
 }
 
-
 .sobre-bg{
     background-image: url('/assets/img/bg-sobre.jpeg');
     background-repeat: no-repeat;
@@ -152,15 +153,30 @@ header{
     background-size: cover;
 }
 
+.grid-sobre{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
 .sobre-conteudo{
-    max-width: 70rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    align-items: center;
+}
+
+.grid-sobre .sobre-coluna-02{
+    min-height: 100vh;
+}
+
+.grid-sobre .sobre-coluna-02 img{
+    height: 50%;
+    width: 100%;
 }
 
 .sobre-conteudo img{
@@ -179,5 +195,13 @@ header{
     font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     
+}
+
+.cardapio{
+    border-top: 0.005rem solid var(--primary-color);
+}
+.cardapio .cardapio-conteudo{
+    background-color: var(--white-color);
+    box-shadow: 0 0 1rem #fff;
 }
 
