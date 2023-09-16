@@ -1,0 +1,175 @@
+:root{
+    --primary-color: #ff6347;
+    --white-color: #fff;
+    --secundary-color: #0a1128;
+    --black-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-family: 'Berkshire Swash', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: var(--primary-color);
+}
+
+header{
+    background-color: #000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem;
+    font-weight: bold;
+    color: var(--white-color);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.menu ul li a:hover{
+    color: var(--primary-color);
+}
+
+.menu h1 a{
+    align-items: center;
+    color: var(--white-color);
+}
+
+.espacamento{
+    height: 4.5rem;
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3rem
+}
+
+.main-bg{
+    background-image: url('/assets/img/bg-main100.jpg');    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.conteudo-Home{
+    color: var(--white-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    max-width: 50vw;
+}
+
+.coluna-intro{
+    text-align: center;
+    line-height: 3rem;
+    padding: 3rem;
+    align-self: center;
+    margin-top: -3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.coluna-intro p{
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+.coluna-intro h2{
+    margin-bottom: 0.6rem;
+    font-size: 4rem;
+}
+
+.coluna-intro .btn-encomenda{
+    color: var(--primary-color);
+    background-color: var(--black-color);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-family:  'Berkshire Swash';
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 0.5rem 0  var(--black-color);
+    transform: scale(1);
+}
+
+.coluna-intro .btn-encomenda:hover{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    transform: scale(1.05);
+}
+
+
+.sobre-bg{
+    background-image: url('/assets/img/bg-sobre.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sobre-conteudo{
+    max-width: 80rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-conteudo p{
+    margin-top: 2rem;
+    color: var(--secundary-color);
+}
+
+.sobre-conteudo h2{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
