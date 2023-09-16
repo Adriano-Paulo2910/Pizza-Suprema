@@ -124,7 +124,7 @@ header{
     font-size: 4rem;
 }
 
-.coluna-intro .btn-encomenda{
+.btn{
     color: var(--primary-color);
     background-color: var(--black-color);
     border: none;
@@ -140,7 +140,7 @@ header{
     transform: scale(1);
 }
 
-.coluna-intro .btn-encomenda:hover{
+.coluna-intro .btn:hover{
     background-color: var(--primary-color);
     color: var(--black-color);
     transform: scale(1.05);
@@ -175,8 +175,8 @@ header{
 }
 
 .grid-sobre .sobre-coluna-02 img{
-    height: 50%;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .sobre-conteudo img{
@@ -197,9 +197,17 @@ header{
     
 }
 
+.cardapio-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
 .cardapio{
+    text-align: center;
     border-top: 0.005rem solid var(--primary-color);
 }
+
 .cardapio .cardapio-conteudo{
     background-color: var(--white-color);
     box-shadow: 0 0 1rem #fff;
