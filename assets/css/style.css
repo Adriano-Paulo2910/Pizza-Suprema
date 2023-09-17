@@ -37,12 +37,13 @@ span{
 }
 
 header{
-    background-color: #000;
+    background-color: #fff;
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
     z-index: 1;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .menu{
@@ -62,7 +63,7 @@ header{
     display: block;
     padding: 1.5rem;
     font-weight: bold;
-    color: var(--white-color);
+    color: var(--black-color);
     transition: all 300ms ease-in-out;
     cursor: pointer;
 }
@@ -73,7 +74,7 @@ header{
 
 .menu h1 a{
     align-items: center;
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .espacamento{
@@ -84,25 +85,26 @@ header{
     min-height: 100vh;
 }
 
+.main-bg{
+    background-image: url(/assets/img/bg-sobre.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
     padding: 3rem
 }
 
-.main-bg{
-    background-image: url('/assets/img/bg-main100.jpg');    
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
 .conteudo-Home{
-    color: var(--white-color);
+    color: var(--black-color);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1.5fr;
     min-height: 100vh;
-    max-width: 50vw;
+    max-width: 100%;
+    gap: 2rem;
 }
 
 .coluna-intro{
@@ -111,51 +113,65 @@ header{
     padding: 3rem;
     align-self: center;
     margin-top: -3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .coluna-intro p{
-   font-size: 1.6rem;
-   font-weight: bold;
+   font-size: 2.5rem;
 }
 
 .coluna-intro h2{
-    margin-bottom: 0.6rem;
+    margin: 2rem auto;
     font-size: 4rem;
 }
 
+.intro-coluna-02{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.intro-coluna-02 img{
+    width: 36rem;
+    height: 36rem;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao input{
+    margin-right: 2rem;
+}
+
 .btn{
-    color: var(--primary-color);
-    background-color: var(--black-color);
-    border: none;
+    color: var(--black-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.2rem;
     padding: 1rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
     font-family:  'Berkshire Swash';
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 0 0 0.5rem 0  var(--black-color);
-    transform: scale(1);
+    background: linear-gradient(to right, var(--primary-color), var(--white-color));
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
+    box-shadow: 0 0 0.5rem 0 var(--black-color);
 }
 
 .coluna-intro .btn:hover{
-    background-color: var(--primary-color);
-    color: var(--black-color);
-    transform: scale(1.05);
+    background-position: -100% 0;
 }
 
 .sobre-bg{
-    background-image: url('/assets/img/bg-sobre.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-color: #ff8772;
 }
 
 .grid-sobre{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 1rem;
     justify-items: center;
     align-items: center;
@@ -185,13 +201,13 @@ header{
 
 .sobre-conteudo p{
     margin-top: 2rem;
-    color: var(--secundary-color);
-    font-size: 1.2rem;
+    color: var(--white-color);
+    font-size: 1.4rem;
     line-height: 1.5rem;
 }
 
 .sobre-conteudo h2{
-    color: var(--primary-color);
+    color: var(--white-color);
     font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     
