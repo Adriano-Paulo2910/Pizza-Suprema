@@ -164,7 +164,10 @@ header{
 }
 
 .sobre-bg{
-    background-color: #ff8772;
+    background-image: url('/assets/img/fundo-branco.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .grid-sobre{
@@ -199,13 +202,13 @@ header{
 
 .sobre-conteudo p{
     margin-top: 2rem;
-    color: var(--white-color);
+    color: var(--primary-color);
     font-size: 1.4rem;
     line-height: 1.5rem;
 }
 
 .sobre-conteudo h2{
-    color: var(--white-color);
+    color: var(--primary-color);
     font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     
@@ -219,8 +222,8 @@ header{
 
 .cardapio{
     text-align: center;
+    background-color: #ebebeb;
     border-top: 0.005rem solid var(--primary-color);
-    background-image: url('/assets/img/fundo-branco.jpeg');
 }
 
 .cardapio .cardapio-conteudo{
@@ -228,8 +231,19 @@ header{
     box-shadow: 0 0 1rem #fff;
 }
 
+.cardapio h2{
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.cardapio p{
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
 .card {
     box-shadow: 0 0 0.2rem 0 var(--black-color);
+    background-color: var(--white-color);
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -238,12 +252,16 @@ header{
 .card img {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 30rem;
     margin-right: 1.5rem;
 }
 
 .item-info {
     flex-grow: 1;
+}
+
+.item-info p:nth-child(3){
+    color: var(--primary-color);
 }
 
 .item-price {
