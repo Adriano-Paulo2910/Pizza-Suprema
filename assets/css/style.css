@@ -43,7 +43,6 @@ header{
     left: 0;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid var(--primary-color);
 }
 
 .menu{
@@ -86,7 +85,7 @@ header{
 }
 
 .main-bg{
-    background-image: url(/assets/img/bg-sobre.jpeg);
+    background-image: url('/assets/img/bg-main100.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -99,7 +98,6 @@ header{
 }
 
 .conteudo-Home{
-    color: var(--black-color);
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     min-height: 100vh;
@@ -150,7 +148,7 @@ header{
     color: var(--black-color);
     border: 1px solid var(--primary-color);
     border-radius: 0.2rem;
-    padding: 1rem;
+    padding: 0.7rem;
     font-family:  'Berkshire Swash';
     font-size: 1.2rem;
     margin-top: 3rem;
@@ -191,7 +189,7 @@ header{
 }
 
 .grid-sobre .sobre-coluna-02 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -222,6 +220,7 @@ header{
 .cardapio{
     text-align: center;
     border-top: 0.005rem solid var(--primary-color);
+    background-image: url('/assets/img/fundo-branco.jpeg');
 }
 
 .cardapio .cardapio-conteudo{
@@ -229,3 +228,24 @@ header{
     box-shadow: 0 0 1rem #fff;
 }
 
+.card {
+    box-shadow: 0 0 0.2rem 0 var(--black-color);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-right: 1.5rem;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-price {
+    font-weight: bold;
+}
