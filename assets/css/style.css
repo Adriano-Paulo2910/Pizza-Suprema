@@ -122,18 +122,6 @@ header{
     font-size: 4rem;
 }
 
-.intro-coluna-02{
-    text-align: center;
-    width: 100%;
-    height: auto;
-    padding: 15px;
-}
-
-.intro-coluna-02 img{
-    width: 36rem;
-    height: 36rem;
-}
-
 .botao{
     display: flex;
     justify-content: center;
@@ -172,13 +160,13 @@ header{
 
 .grid-sobre{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     gap: 1rem;
     justify-items: center;
     align-items: center;
 }
 
-.sobre-conteudo{
+.sobre-conteudo, .sobre-coluna-02{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -187,31 +175,21 @@ header{
     justify-content: center;
 }
 
-.grid-sobre .sobre-coluna-02{
-    min-height: 100vh;
-}
-
-.grid-sobre .sobre-coluna-02 img{
-    width: 100%;
-    height: auto;
-}
-
-.sobre-conteudo img{
-    margin-bottom: 1rem;
+.sobre-coluna-02 img{
+    height: 36rem;
 }
 
 .sobre-conteudo p{
     margin-top: 2rem;
-    color: var(--primary-color);
+    color: var(--black-color);
     font-size: 1.4rem;
     line-height: 1.5rem;
 }
 
 .sobre-conteudo h2{
     color: var(--primary-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    
 }
 
 .cardapio-grid{
@@ -222,7 +200,7 @@ header{
 
 .cardapio{
     text-align: center;
-    background-color: #ebebeb;
+    background-color: #f4f4f4;
     border-top: 0.005rem solid var(--primary-color);
 }
 
